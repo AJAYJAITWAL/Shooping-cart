@@ -24,7 +24,9 @@
     <% end %>
     </p>
 
-    <p class="notice"><%= notice %></p>
+    <% if notice%>
+      <p class="alert alert-success"><%= notice %></p>
+    <% end %>
     <p class="alert"><%= alert %></p>
 
     <div class="container">

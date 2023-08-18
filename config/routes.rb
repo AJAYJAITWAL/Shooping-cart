@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   resources :products
   resources :carts, only: [:show]
   resource :cart_items, except: [:show]
+  resources :orders
 end

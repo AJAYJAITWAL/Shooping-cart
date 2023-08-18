@@ -7,5 +7,4 @@ class ApplicationController < ActionController::Base
   def current_cart
     @current_cart ||= current_user&.cart
   end
-
 end
