@@ -18,7 +18,7 @@
             <% end %>
             <p class="card-text"><%= product.description %></p>
             <h3 class="card-text"><%= product.price %>₹</h3>
-            <%= link_to '#', class: 'btn btn-primary' do %>
+            <%= link_to "#", method: :post, class: 'btn btn-primary add-to-cart', data: { product_id: product.id } do %>
               <i class="bi bi-cart"></i> Add to cart
             <% end %>
           </div>

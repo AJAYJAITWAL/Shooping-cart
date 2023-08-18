@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  resources :products
+  root 'products#index'
+  
   devise_for :users
-  root 'welcome#index'
+
+  resources :products
+  resources :carts, only: [:show]
+  resource :cart_items, except: [:show]
 end
